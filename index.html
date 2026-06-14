@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Huella de Carbono y Privacidad</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Auditoría Digital</h1>
+</header>
+
+<main>
+
+  <!-- Sección de información -->
+  <section id="info">
+    <h2>¿Qué es la huella de carbono tecnológica?</h2>
+    <p>
+      La huella de carbono es la cantidad de CO2 que generamos por nuestras actividades. En el caso de la tecnología, cada vez que usamos un dispositivo electrónico estamos consumiendo electricidad que en muchos casos proviene de fuentes contaminantes. Los teléfonos, computadoras, tablets y demás dispositivos contribuyen al calentamiento global.
+    </p>
+    <p>
+      También hay que pensar en el proceso de fabricación y en los residuos electrónicos que generamos cuando tiramos los aparatos viejos.
+    </p>
+
+    <h2>¿Qué es la privacidad de datos?</h2>
+    <p>
+      La privacidad de datos se refiere a la protección de nuestra información personal cuando usamos internet y aplicaciones digitales. Es importante cuidar qué datos compartimos porque las empresas los pueden usar para hacer publicidad o venderlos a terceros.
+    </p>
+    <p>
+      Debemos tener cuidado con los permisos que damos a las aplicaciones y ser conscientes de qué información compartimos en redes sociales.
+    </p>
+  </section>
+
+  <!-- Simulador -->
+  <section id="simulador">
+    <h2>Simulador de impacto</h2>
+    <p>Completá los datos para ver tu impacto estimado:</p>
+
+    <form id="form-sim">
+
+      <div class="campo">
+        <label for="nombre">Tu nombre (opcional, para personalizar el resultado):</label>
+        <input type="text" id="nombre" placeholder="Escribí tu nombre..." />
+        <small>Solo usamos tu nombre para mostrar el resultado, no lo guardamos en ningún lado... creemos.</small>
+      </div>
+
+      <div class="campo">
+        <label for="horas-cel">Horas de celular por día:</label>
+        <input type="number" id="horas-cel" placeholder="ej: 3" />
+      </div>
+
+      <div class="campo">
+        <label for="horas-pc">Horas de computadora por día:</label>
+        <input type="number" id="horas-pc" placeholder="ej: 4" />
+      </div>
+
+      <div class="campo">
+        <label for="streaming">Horas de streaming por semana:</label>
+        <input type="number" id="streaming" placeholder="ej: 7" />
+      </div>
+
+      <div class="campo">
+        <label for="dispositivos">¿Cuántos dispositivos tenés en casa?</label>
+        <input type="number" id="dispositivos" placeholder="ej: 4" />
+      </div>
+
+      <div class="campo">
+        <label for="renovacion">¿Cada cuánto cambiás de celular?</label>
+        <select id="renovacion">
+          <option value="">Seleccionar...</option>
+          <option value="alto">Cada año</option>
+          <option value="medio">Cada 2 o 3 años</option>
+          <option value="bajo">Cada 4 años o más</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label>
+          <input type="checkbox" id="datos-extra" />
+          Comparto datos personales innecesarios en redes
+        </label>
+      </div>
+
+      <button type="button" id="btn-calcular">Ver mi impacto</button>
+    </form>
+
+    <div id="resultado" class="resultado" style="display:none;">
+      <h3 id="saludo-nombre"></h3>
+      <p id="texto-resultado"></p>
+      <div id="barra-container">
+        <div id="barra-impacto"></div>
+      </div>
+      <p id="nivel-texto"></p>
+      <div id="recomendaciones-box">
+        <h4>Algunas recomendaciones:</h4>
+        <p id="texto-recomendaciones"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campaña -->
+  <section id="campana">
+    <h2>Campaña de concientización</h2>
+
+    <div class="campana-grid">
+      <div class="mensaje">
+        <h3>📱 Usá menos el celular</h3>
+        <p>Reducir el tiempo de pantalla ayuda al medioambiente y también a tu salud. Intentá no usar el celular por lo menos una hora antes de dormir.</p>
+      </div>
+
+      <div class="mensaje">
+        <h3>♻️ No tirés los aparatos viejos</h3>
+        <p>Lleválos a un punto de reciclaje electrónico. La fabricación de dispositivos nuevos genera mucha contaminación, así que también es mejor repararlos si se puede.</p>
+      </div>
+  </section>
+   <div class="llamado-accion">
+      <p><strong>¡Compartí este proyecto con tu familia y amigos!</strong></p>
+      <p>Entre todos podemos hacer una diferencia. Pequeños cambios en nuestros hábitos digitales pueden tener un gran impacto colectivo.</p>
+    </div>  
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

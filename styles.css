@@ -1,0 +1,239 @@
+/* Estilos del proyecto intermedio */
+/* Funciona, pero tiene aspectos mejorables */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 0 0 15px 0;
+  font-size: 1em;
+  opacity: 0.9;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95em;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Secciones */
+section {
+  background: white;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+section h2 {
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 8px;
+  margin-top: 0;
+}
+
+section p {
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Campos del formulario */
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-size: 0.95em;
+}
+
+.campo input[type="text"],
+.campo input[type="number"],
+.campo select {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.campo input[type="text"]:focus,
+.campo input[type="number"]:focus,
+.campo select:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+.campo small {
+  display: block;
+  margin-top: 4px;
+  color: #888;
+  font-size: 0.8em;
+}
+
+.campo input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Botón */
+button#btn-calcular {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+button#btn-calcular:hover {
+  background-color: #1b5e20;
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 25px;
+  padding: 20px;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+}
+
+.resultado h3 {
+  color: #1b5e20;
+  margin-top: 0;
+}
+
+.resultado p {
+  color: #333;
+}
+
+/* Barra de impacto */
+#barra-container {
+  background: #ddd;
+  border-radius: 20px;
+  height: 22px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+#barra-impacto {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 20px;
+  width: 0%;
+  transition: width 0.8s ease;
+}
+
+#nivel-texto {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Recomendaciones */
+#recomendaciones-box {
+  margin-top: 15px;
+  padding: 12px;
+  background: white;
+  border-radius: 4px;
+  border-left: 4px solid #2e7d32;
+}
+
+#recomendaciones-box h4 {
+  margin: 0 0 8px 0;
+  color: #2e7d32;
+}
+
+/* Campaña */
+.campana-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.mensaje {
+  padding: 15px;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+.mensaje h3 {
+  font-size: 1em;
+  margin: 0 0 8px 0;
+  color: #2e7d32;
+}
+
+.mensaje p {
+  font-size: 0.9em;
+  margin: 0;
+  color: #555;
+}
+
+/* Llamado a la acción */
+.llamado-accion {
+  background: #e8f5e9;
+  padding: 15px 20px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 20px;
+}
+
+footer p { margin: 4px 0; }
+
+/* Responsive básico - mejorable */
+@media (max-width: 600px) {
+  .campana-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
